@@ -9,16 +9,16 @@ import AboutUs from './Pages/AboutUs'
 import JoinNewsletter2 from './Component/JoinNewsletter2'
 import Services from './Pages/Services'
 import Contact from './Pages/ContactUs'
-import Product from './Pages/product'
+import Product from './Pages/Product'
 import { OurTeam } from './Pages/OurTeam'
 import { Process } from './Component/Process/Process'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import NotFound from './Pages/Notfound';
-import Career from './Component/careerpage';
+import Career from './Component/Career';
 
 import Gallery from './Pages/Gallery'
 
-import CustomCursor from './Component/customcursor';
+import CustomCursor from './Component/Customcursor';
 function App() {
   const [count, setCount] = useState(0)
 
