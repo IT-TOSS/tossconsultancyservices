@@ -17,15 +17,13 @@ import NotFound from './Pages/Notfound';
 import Career from './Component/Career';
 
 import Gallery from './Pages/Gallery'
-
-// import CustomCursor from './Component/CustomCursor';
-import CustomCursor from './Component/CustomCursor'
+import CustomCursor from './Pages/CustomCursor'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <CustomCursor /> 
+    <CustomCursor/>
     <Header/>
     <Routes>
         <Route path="/" element={<Home />} />
