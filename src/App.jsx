@@ -18,7 +18,7 @@ import Career from './Component/Career';
 
 import Gallery from './Pages/Gallery'
 
-import CustomCursor from './Component/Customcursor';
+import CustomCursor from './Component/CustomCursor';
 function App() {
   const [count, setCount] = useState(0)
 
