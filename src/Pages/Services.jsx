@@ -2,7 +2,7 @@ import React from 'react'
 import TrustedByMany1 from '../Component/services/TrustedByMany1'
 import TrustedByMany2 from '../Component/services/TrustedByMany2'
 
-const services = () => {
+const Services = () => {
     return (
         <>
             <div className="relative flex flex-col items-center justify-center min-h-[250px] bg-white text-center px-6 md:px-12 py-12 pt-[177px]">
@@ -32,4 +32,4 @@ const services = () => {
     )
 }
 
-export default services
+export default Services

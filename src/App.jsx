@@ -7,7 +7,7 @@ import Home from './Pages/Home'
 import { Routes, Route } from "react-router-dom";
 import AboutUs from './Pages/AboutUs'
 import JoinNewsletter2 from './Component/JoinNewsletter2'
-import Services from './Pages/services'
+import Services from './Pages/Services'
 import Contact from './Pages/ContactUs'
 import Product from './Pages/product'
 import { OurTeam } from './Pages/OurTeam'
