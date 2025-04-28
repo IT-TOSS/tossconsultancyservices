@@ -74,15 +74,26 @@ const OurVision = () => {
   return (
     <section className="flex flex-col items-center justify-center p-6 md:p-12 bg-gray-100 min-h-screen">
       {/* Heading */}
-      <motion.h1
+      {/* <motion.h1
         className="text-3xl md:text-5xl font-bold text-#000000 mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         Our Vision & Mission
-      </motion.h1>
+      </motion.h1> */}
 
+<motion.h1
+  className="relative font-bold text-[45px] text-black leading-tight pt-24 z-10 mb-10 text-center"
+  style={{ fontFamily: 'Syne, sans-serif' }}
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
+  Our Vision & Mission
+</motion.h1>
+
+      
       {/* Vision & Mission Container */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-6xl">
         {/* Left Side - Image */}
@@ -108,7 +119,7 @@ const OurVision = () => {
         >
           {/* Mission */}
           <div className="bg-white shadow-lg rounded-xl p-8 hover:shadow-xl transition">
-            <h2 className="text-3xl font-semibold text-#000000 mb-4"style={{fontFamily:"Heebo,sans-serif", fontSize:"35px"}}>Our Mission</h2>
+            <h2 className="text-3xl font-semibold text-#000000 mb-4"style={{fontFamily:"Syne,sans-serif", fontSize:"35px"}}>Our Mission</h2>
             <p className="text-lg text-#000000 leading-relaxed"style={{fontFamily:"Heebo,sans-serif", fontSize:"17px"}}>
               To develop cutting-edge AI tools like TOAi for seamless image generation and creativity enhancement.
               To build innovative web and mobile applications that enhance user engagement and business efficiency.

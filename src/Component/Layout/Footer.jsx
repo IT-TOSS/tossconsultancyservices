@@ -147,9 +147,9 @@
 // const Footer = () => {
 //   return (
 //   //   <footer className="bg-black text-white px-0,py-10"style={{
-     
+
 //   //     padding: "157px 0 36px"
-       
+
 //   //   }}>
 //   //     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12" >
 //   //       {/* Left Section */}
@@ -221,13 +221,13 @@
 //   //       © 2025 TOSS Consultancy Services, All Rights Reserved
 //   //     </div>
 
-      
+
 //   //   </footer>
 //   // );
 
 //   <footer className="bg-black text-white px-4 md:px-0 py-30" style={{ padding: "157px 3 36px" }}>
 //   <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-    
+
 //     {/* Left Section */}
 //     <div>
 //       <h2 className="text-3xl md:text-5xl font-light tracking-wide">TOSS Consultancy Services</h2>
@@ -281,7 +281,7 @@
 //   </div>
 
 //   {/* Footer Bottom */}
-  
+
 //   <div className="mt-16 text-center text-gray-500 text-xs">
 //     © 2025 TOSS Consultancy Services, All Rights Reserved
 //   </div>
@@ -296,6 +296,29 @@
 
 
 import React from 'react';
+
+const footerSections = [
+  {
+    title: "Main Menu",
+    links: [
+      { label: "MAIN HOME", href: "/" },
+      { label: "CONTACT", href: "/contact" },
+      { label: "SERVICES", href: "/services" },
+      { label: "LANDING", href: "/" },
+    ],
+  },
+  {
+    title: "About",
+    links: [
+      { label: "ABOUT US", href: "/about" },
+      { label: "CAREER", href: "/career" },
+      { label: "GALLERY", href: "/gallery" },
+      { label: "OUR PROCESS", href: "/ourProcess" },
+      { label: "OUR TEAM", href: "/ourTeam" },
+    ],
+  },
+];
+
 
 const Footer = () => {
   return (
@@ -328,25 +351,20 @@ const Footer = () => {
 
         {/* Middle Section */}
         <div className="grid grid-cols-2 gap-6">
-          <div>
-            <h3 className="font-semibold text-lg">Main Menu</h3>
-            <ul className="mt-4 space-y-2 text-gray-400 text-sm">
-              <li><a href="/" className="hover:text-white transition-colors">MAIN HOME</a></li>
-              <li><a href="/contact" className="hover:text-white transition-colors">CONTACT</a></li>
-              <li><a href="/services" className="hover:text-white transition-colors">SERVICES</a></li>
-              <li><a href="/" className="hover:text-white transition-colors">LANDING</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg">About</h3>
-            <ul className="mt-4 space-y-2 text-gray-400 text-sm">
-              <li><a href="/about" className="hover:text-white transition-colors">ABOUT US</a></li>
-              <li><a href="/career" className="hover:text-white transition-colors">CAREER</a></li>
-              <li><a href="/gallery" className="hover:text-white transition-colors">GALLERY</a></li>
-              <li><a href="/ourProcess" className="hover:text-white transition-colors">OUR PROCESS</a></li>
-              <li><a href="/ourTeam" className="hover:text-white transition-colors">OUR TEAM</a></li>
-            </ul>
-          </div>
+          {footerSections.map((section, index) => (
+            <div key={index}>
+              <h3 className="font-semibold text-lg">{section.title}</h3>
+              <ul className="mt-4 space-y-2 text-gray-400 text-sm">
+                {section.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <a href={link.href} className="hover:text-white transition-colors">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Right Section - Newsletter */}

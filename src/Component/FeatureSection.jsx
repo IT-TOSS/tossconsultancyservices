@@ -158,6 +158,92 @@
 // export default FeatureSection;
 
 
+// import React from 'react';
+
+// const features = [
+//   {
+//     number: '01',
+//     title: (
+//       <>
+//         TOAi-AI <br />
+//         Driven Image <br />
+//         Generation
+//       </>
+//     ),
+//     description:
+//       'TOAi is an innovative AI-driven image generation tool designed to transform the way businesses create product visuals. Focused on e-commerce, fashion, and grocery industries, TOAi empowers brands to generate high-quality, customizable, and scalable product images instantly. By eliminating the need for traditional photoshoots, TOAi significantly reduces costs and production time, enabling businesses to enhance their product presentation effortlessly.',
+//   },
+//   {
+//     number: '02',
+//     title: (
+//       <>
+//         Utility-Powered <br />
+//         Workflow Enhancer
+//       </>
+//     ),
+//     description:
+//       "Coming Soon: A powerful solution built with neat utility features designed to streamline your everyday operations and elevate your workflows. From intelligent automation to seamless integration with your favorite tools, this product is crafted to simplify complex tasks and boost productivity. Whether you're managing projects, handling data, or optimizing customer journeys, our upcoming solution offers the flexibility and performance needed to stay ahead. Stay tuned for a game-changing experience tailored to modern business needs."
+//   },
+//   {
+//     number: '03',
+//     title: (
+//       <>
+//         AI Chatbot <br />
+//         for Customer <br />
+//         Engagement
+//       </>
+//     ),
+//     description:
+//       'Our AI-powered chatbot streamlines customer interactions by answering FAQs, collecting responses, and providing instant quotes. It integrates with CRMs, automates workflows, and supports multi-platform deployment. With secure data handling and customizable plans, businesses can enhance engagement and efficiency. Fast deployment and dedicated support ensure a seamless experience tailored to your needs.',
+//   },
+// ];
+
+// const FeatureSection = () => {
+//   return (
+//     <div className="bg-white py-24 px-6 md:px-12">
+//       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+//         {features.map((feature, index) => (
+//           <div key={index} className="relative">
+//             {/* Faded Number */}
+//             <div className="absolute top-0 left-0 text-[180px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-blue-200 leading-none pointer-events-none select-none">
+//               {feature.number}
+//             </div>
+
+//             {/* Title */}
+//             <h3 className="relative font-bold text-[35px] text-black leading-tight pt-24 z-10" 
+//             style={{fontFamily:"Syne,sans-serif"}}>
+//               {feature.title}
+//             </h3>
+
+//             {/* Description */}
+//             <p className="text-black text-[19px]  mt-4 leading-relaxed" style={{fontFamily:"Heebo,sans-serif"}}>
+//               {feature.description}
+//             </p>
+
+//             {/* View More */}
+//             <div className="mt-6 flex items-center gap-2 group cursor-pointer transition-all duration-300">
+//               <div className="w-14 h-[1px] bg-blue-200 group-hover:w-16 transition-all duration-300"></div>
+//               <a
+//                 href="/product"
+//                 className="text-[13px] font-semibold tracking-widest uppercase text-black group-hover:underline"
+//               >
+//                 View More
+//               </a>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default FeatureSection;
+
+
+
+
+
+
 import React from 'react';
 
 const features = [
@@ -171,18 +257,19 @@ const features = [
       </>
     ),
     description:
-      'TOAi is an innovative AI-driven image generation tool designed to transform the way businesses create product visuals. Focused on e-commerce, fashion, and grocery industries, TOAi empowers brands to generate high-quality, customizable, and scalable product images instantly. By eliminating the need for traditional photoshoots, TOAi significantly reduces costs and production time, enabling businesses to enhance their product presentation effortlessly.',
+      'TOAi transforms product visuals with AI-driven image generation. Ideal for e-commerce, fashion, and grocery, it eliminates costly photoshoots and enables fast, scalable, high-quality image creation.',
   },
   {
     number: '02',
     title: (
       <>
-        Utility-Powered <br />
-        Workflow Enhancer
+        Utility <br />
+        Powered Workflow<br />
+         Enhancer
       </>
     ),
     description:
-      "Coming Soon: A powerful solution built with neat utility features designed to streamline your everyday operations and elevate your workflows. From intelligent automation to seamless integration with your favorite tools, this product is crafted to simplify complex tasks and boost productivity. Whether you're managing projects, handling data, or optimizing customer journeys, our upcoming solution offers the flexibility and performance needed to stay ahead. Stay tuned for a game-changing experience tailored to modern business needs."
+      'Coming Soon: A smart utility tool to automate tasks, simplify operations, and enhance productivity across teams. Seamless integrations and modern design for smarter workflows.',
   },
   {
     number: '03',
@@ -194,7 +281,7 @@ const features = [
       </>
     ),
     description:
-      'Our AI-powered chatbot streamlines customer interactions by answering FAQs, collecting responses, and providing instant quotes. It integrates with CRMs, automates workflows, and supports multi-platform deployment. With secure data handling and customizable plans, businesses can enhance engagement and efficiency. Fast deployment and dedicated support ensure a seamless experience tailored to your needs.',
+      'Our AI chatbot automates customer queries, collects data, and integrates with CRMs. It supports multiple platforms, ensuring fast deployment and improved engagement ,also providing instant quotes.',
   },
 ];
 
@@ -210,13 +297,18 @@ const FeatureSection = () => {
             </div>
 
             {/* Title */}
-            <h3 className="relative font-bold text-[35px] text-black leading-tight pt-24 z-10" 
-            style={{fontFamily:"Syne,sans-serif"}}>
+            <h3
+              className="relative font-bold text-[35px] text-black leading-tight pt-24 z-10"
+              style={{ fontFamily: 'Syne,sans-serif' }}
+            >
               {feature.title}
             </h3>
 
             {/* Description */}
-            <p className="text-black text-[19px]  mt-4 leading-relaxed" style={{fontFamily:"Heebo,sans-serif"}}>
+            <p
+              className="text-black text-[19px] mt-4 leading-relaxed"
+              style={{ fontFamily: 'Heebo,sans-serif' }}
+            >
               {feature.description}
             </p>
 
@@ -238,3 +330,4 @@ const FeatureSection = () => {
 };
 
 export default FeatureSection;
+

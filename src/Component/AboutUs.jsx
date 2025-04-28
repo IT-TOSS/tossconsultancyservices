@@ -52,8 +52,8 @@ export default function AboutUs() {
     <>
       {/* Header Section */}
       <div className="relative flex flex-col items-center justify-center min-h-[120px] bg-white pt-[140px] px-5">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-500 text-center">
-          About TOSS Consultancy Services
+        <h2 className="text-3xl font-semibold text-#000000 mb-4"style={{fontFamily:"Syne,sans-serif", fontSize:"35px"}}>
+          About TOSS 
         </h2>
       </div>
 
@@ -62,12 +62,12 @@ export default function AboutUs() {
         
         {/* Left Content Section */}
         <div className="w-full md:w-3/5 lg:w-1/2 px-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6 text-center md:text-left">
+          <h1 className="text-3xl font-semibold text-#000000 mb-4"style={{fontFamily:"Syne,sans-serif", fontSize:"35px"}}>
             We don’t just build technology, <br className="hidden md:inline" /> we shape the future.
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-center md:text-left">
-            TOSS Consultancy Services (TCS) is a forward-thinking technology company driving AI innovation, automation, and digital transformation.  
+          <p className="text-lg text-#0000000 pt-4 leading-relaxed"style={{fontFamily:"Heebo,sans-serif", fontSize:"19px"}}>
+            TOSS Consultancy Services is a forward-thinking technology company driving AI innovation, automation, and digital transformation.  
             We specialize in cutting-edge AI solutions, intelligent automation, web & mobile development, chatbots, and data-driven insights** that help businesses scale efficiently.  
             <br /><br />
             Our mission is to bridge the gap between business needs and advanced technology by creating innovative, scalable, and intelligent solutions.  
@@ -75,20 +75,20 @@ export default function AboutUs() {
           </p>
 
           {/* Updated Key Services Section with Gradient */}
-          <div className="px-6 py-3 text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-md shadow-md hover:scale-105 transition mt-6">
+          <div className="px-6 py-3 text-white bg-gradient-to-r from-blue-400 to-purple-400 rounded-md shadow-md hover:scale-105 transition mt-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-white mb-4 text-center md:text-left">
               Our Key Services
             </h3>
-            <ul className="list-disc pl-5 text-lg md:text-xl text-white leading-relaxed space-y-2">
-              <li>🚀 AI-driven tools & automation for business efficiency</li>
-              <li>📱 Advanced web & mobile application development</li>
-              <li>🤖 Smart AI chatbots for enhanced customer engagement</li>
-              <li>📊 Data crawling, analytics, and AI-powered insights</li>
-              <li>🎨 AI-based image generation with TOAi</li>
+            <ul className="list-disc pl-5 text-lg md:text-xl text-white leading-relaxed space-y-2" style={{fontFamily:"Heebo,sans-serif", fontSize:"19px"}}>
+              <li>🚀 AI-driven tools & automation for business efficiency.</li>
+              <li>📱 Advanced web & mobile application development.</li>
+              <li>🤖 Smart AI chatbots for enhanced customer engagement.</li>
+              <li>📊 Data crawling, analytics, and AI-powered insights.</li>
+              <li>🎨 AI-based image generation with TOAi.</li>
             </ul>
           </div>
 
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-6 text-center md:text-left pb-20">
+          <p className="text-lg text-#0000000 pt-4 leading-relaxed"style={{fontFamily:"Heebo,sans-serif", fontSize:"19px"}}>
             At <b>TOSS</b>, we believe in leveraging AI, automation, and digital solutions 
             to help businesses unlock new growth opportunities. Our goal is to create a smarter,  
             more connected world where technology drives progress and efficiency.
